@@ -147,6 +147,7 @@
     .paper {
       position: absolute;
       inset: 0;
+      height: 100%;
       padding: 40px 34px;
       background:
         linear-gradient(180deg, rgba(255,248,224,0.98), rgba(243,229,190,0.98)),
@@ -163,7 +164,9 @@
       box-shadow:
         0 22px 54px rgba(0,0,0,0.36),
         inset 0 0 14px rgba(255,255,255,0.2);
-      overflow: hidden;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding-right: 10px;
     }
 
     .paper::before {
